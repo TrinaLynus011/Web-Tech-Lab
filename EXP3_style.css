@@ -1,0 +1,176 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Vibrant Background & Text Formatting */
+body {
+    background: linear-gradient(135deg, #f6f8ff 0%, #dbefff 100%);
+    font-family: 'Segoe UI', sans-serif;
+    color: #1a1a1a;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    padding: 28px 0;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 0 0 24px 24px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    text-shadow: 2px 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Navigation */
+nav {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #f1f5ff;
+    background-color: rgba(255,255,255,0.1);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(3px);
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Layout */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Add Password Form */
+.add-form {
+    background: linear-gradient(to right, #ffffff, #eef5ff);
+    padding: 28px;
+    margin-bottom: 36px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.add-form:hover {
+    transform: scale(1.01);
+}
+
+.add-form h2 {
+    margin-bottom: 20px;
+    color: #4b3b98;
+}
+
+.add-form input,
+.add-form button {
+    padding: 12px 14px;
+    margin: 10px 8px;
+    border-radius: 8px;
+    border: 1px solid #ccd3e0;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+/* Input focus effect */
+.add-form input:focus {
+    border: 2px solid #667eea;
+    box-shadow: 0 0 8px #aab8f6;
+    outline: none;
+}
+
+/* Button style */
+.add-form button {
+    cursor: pointer;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.add-form button:hover {
+    background: linear-gradient(to right, #5a67d8, #6b46c1);
+    opacity: 0.95;
+    transform: translateY(-2px);
+}
+
+/* Password List */
+.password-list h2 {
+    color: #4b3b98;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.password-list .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styles */
+.card {
+    background: linear-gradient(to bottom right, #ffffff, #f4f7ff);
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid #d3dafe;
+    opacity: 0.97;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 36px rgba(59, 89, 152, 0.18);
+    opacity: 1;
+    border-color: #667eea;
+}
+
+.website {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #4b3b98;
+}
+
+.username,
+.password {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    main {
+        padding: 0 10px;
+    }
+    .add-form,
+    .card {
+        padding: 14px;
+    }
+}
